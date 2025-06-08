@@ -1,47 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Karen Quispe Zamata</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #e8dee4;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      background-color: #5b1443;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    h2 {
-      color: #006666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Mauricio Rodríguez Peña</title>
+    <style>
+        /* General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e8ff); /* Fondo con degradado suave */
+            color: #333; /* Texto general */
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #00695c, #004d40); /* Degradado moderno */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #a5d6a7; /* Verde pastel */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff; /* Blanco al pasar el mouse */
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.5s ease;
+        }
+
+        section h2 {
+            color: #00695c; /* Verde oscuro */
+            border-bottom: 3px solid #80cbc4; /* Detalle de línea */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        section p, section ul {
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li strong {
+            color: #004d40;
+        }
+
+        ul li a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            color: #004d40;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg, #004d40, #00695c);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #a5d6a7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            nav a {
+                font-size: 1.2rem;
+            }
+
+            section {
+                margin: 30px 0;
+                padding: 30px;
+            }
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Karen Quispe Zamata</h1>
-    <p>Estudiante de Administración y Negocios</p>
-  </header>
-
-  <section>
-    <h2>Biografía</h2>
-    <p>Soy Karen Quispe Zamata, estudiante de <strong>Administración y Negocios</strong> en la <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">Universidad Católica San Pablo</a>.</p>
-    <p>Me gusta aprender, crecer profesionalmente y me apasionan los negocios y la innovación.</p>
-  </section>
-
-  <section>
-    <h2>Contacto</h2>
-    <p>Muy pronto agregaré mis redes y foto de perfil 😊</p>
-  </section>
 </body>
 </html>
