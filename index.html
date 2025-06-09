@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karen Quispe Zamata</title>
+    <title>Karen Quispe Zamata - Administración y Negocios</title>
     <style>
-        /* General */
+        /* Estilos generales */
         * {
             margin: 0;
             padding: 0;
@@ -13,122 +13,222 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f0f4f8, #d9e8ff); /* Fondo con degradado suave */
-            color: #333; /* Texto general */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
             line-height: 1.6;
             overflow-x: hidden;
+            background-color: #f9f9f9;
         }
 
-        /* Header */
+        /* Header estilo Squarespace */
         header {
-            background: linear-gradient(90deg, #00695c, #004d40); /* Degradado moderno */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 5%;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        header h1 {
-            font-size: 2.5rem;
+        .logo {
+            font-size: 24px;
             font-weight: bold;
+            color: #000;
         }
 
         nav {
-            margin-top: 10px;
+            display: flex;
         }
 
         nav a {
-            color: #a5d6a7; /* Verde pastel */
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
+            margin-left: 30px;
+            font-size: 16px;
+            font-weight: 400;
             transition: color 0.3s ease;
+            position: relative;
         }
 
         nav a:hover {
-            color: #ffffff; /* Blanco al pasar el mouse */
+            color: #00695c;
         }
 
-        /* Main Section */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #00695c;
+            transition: width 0.3s ease;
         }
 
-        section {
-            background-color: #ffffff;
-            width: 90%;
-            max-width: 800px;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-            animation: fadeIn 0.5s ease;
+        nav a:hover::after {
+            width: 100%;
         }
 
-        section h2 {
-            color: #00695c; /* Verde oscuro */
-            border-bottom: 3px solid #80cbc4; /* Detalle de línea */
-            padding-bottom: 10px;
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
             margin-bottom: 20px;
-            font-size: 1.8rem;
+            font-weight: 300;
         }
 
-        section p, section ul {
-            font-size: 1rem;
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-weight: 300;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li strong {
-            color: #004d40;
-        }
-
-        ul li a {
-            color: #00796b;
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: white;
+            color: #00695c;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
         }
 
-        ul li a:hover {
-            text-decoration: underline;
+        .btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        /* Main content sections */
+        .content-section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Grid layout for studies */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .grid-item h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #00695c;
+        }
+
+        .grid-item p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Collaborators section */
+        .collaborators {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .collaborator-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0f4f8;
+            color: #00695c;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .collaborator-link:hover {
+            background-color: #00695c;
+            color: white;
+        }
+
+        /* Contact section */
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-info a {
+            color: #00695c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
             color: #004d40;
+            text-decoration: underline;
         }
 
         /* Footer */
         footer {
-            background: linear-gradient(90deg, #004d40, #00695c);
+            background-color: #222;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
-            font-size: 0.9rem;
+            padding: 30px 0;
+            margin-top: 80px;
         }
 
-        footer a {
-            color: #a5d6a7;
-            text-decoration: none;
+        footer p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
         }
 
-        footer a:hover {
-            color: #ffffff;
-        }
-
-        /* Keyframes for animations */
+        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
@@ -136,79 +236,121 @@
             }
         }
 
-        /* Responsive */
-        @media (min-width: 768px) {
-            nav a {
-                font-size: 1.2rem;
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
             }
 
-            section {
-                margin: 30px 0;
-                padding: 30px;
+            nav {
+                margin-top: 20px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .content-section {
+                padding: 60px 20px;
             }
         }
     </style>
 </head>
-</body>
-<header>
-        <h1>Karen Quispe Zamata</h1>
+<body>
+    <header>
+        <div class="logo">Karen Quispe Zamata</div>
         <nav>
             <a href="#biografia">Biografía</a>
-            <a href="#estudios">Estudios y Cursos</a>
+            <a href="#estudios">Estudios</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
-    <main>
-        <section id="biografia">
+    <section class="hero fade-in">
+        <h1>Administración y Negocios</h1>
+        <p>Estudiante en la Universidad Católica San Pablo apasionada por el aprendizaje, crecimiento profesional y la innovación en los negocios.</p>
+        <a href="#biografia" class="btn">Conoce más</a>
+    </section>
+
+    <section id="biografia" class="content-section fade-in">
+        <div class="section-title">
             <h2>Biografía</h2>
-            <p>Soy Karen Quispe Zamata, estudiante de 
-    <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">
-        <strong>Administración y Negocios</strong>
-    </a> 
-    en la 
-    <a href="https://ucsp.edu.pe/" target="_blank">
-        Universidad Católica San Pablo
-    </a>.
-</p>
-<p>Me gusta aprender, crecer profesionalmente y me apasionan los negocios y la innovación.</p>
-  </section>
+            <p>Un poco sobre mi trayectoria y aspiraciones profesionales</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>Soy Karen Quispe Zamata, estudiante de 
+                    <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">
+                        <strong>Administración y Negocios</strong>
+                    </a> 
+                    en la 
+                    <a href="https://ucsp.edu.pe/" target="_blank">
+                        Universidad Católica San Pablo
+                    </a>.
+                </p>
+                <p>Me gusta aprender, crecer profesionalmente y me apasionan los negocios y la innovación.</p>
+            </div>
+        </div>
+    </section>
 
-        </section>
-
-        <section id="estudios">
+    <section id="estudios" class="content-section fade-in">
+        <div class="section-title">
             <h2>Estudios y Cursos</h2>
-            <p>Actualmente, estoy cursando los siguientes cursos:</p>
-            <ul>
-                <li><strong>Matemática 1:</strong> Fundamentos matemáticos necesarios para el análisis en ingeniería.</li>
-                <li><strong>Química 1:</strong> Introducción a los principios químicos aplicados a la ingeniería.</li>
-                <li><strong>Metodología de la Investigación Científica:</strong> Métodos y técnicas de investigación en ingeniería.</li>
-                <li><strong>Economía General:</strong> Principios económicos y su aplicación en la industria.</li>
-                <li><strong>Introducción a la Filosofía:</strong> Reflexión crítica sobre conceptos fundamentales de la filosofía.</li>
-                <li><strong>Introducción a la Ciencia de la Computación:</strong> Conceptos básicos y fundamentos de programación.</li>
-            </ul>
-            <p>También colaboro y comparto experiencias con mis compañeros:</p>
-            <ul>
-                <li><a href="https://fabriciobernardovillanueva.github.io/githubpagetest/" target="_blank">Fabricio Bernardo Villanueva Valdivia</a></li>
-                <li><a href="https://jonathanboristunquipaticuna.github.io/JonathanBorisTunquipaTicu-a/" target="_blank">Jonathan Boris Tunquipa Ticuña</a></li>
-                <li><a href="https://yadhirayurikhocoyuritirado.github.io/yadhirayurikhocoyuri/" target="_blank">Yadhira Yurikho Coyuri Tirado</a></li>
-                <li><a href="https://emerickcarlosteranbedregal.github.io/EmerickCarlosTeranBedregal/" target="_blank">Emerick Carlos Teran Bedregal</a></li>
-                <li><a href="https://joaquinadrianolopezmolina.github.io/JoaquinAdrianoLopezMolina/" target="_blank">Joaquin Adriano Lopez Molina</a></li>
-                <li><a href="https://rodrigorembrantsalasapaza.github.io/RodrigoRembrantSalasApaza/" target="_blank">Rodrigo Rembrant Salas Apaza</a></li>
-                <li><a href="https://luisstefanopachecovaldivia.github.io/LuisStefanoPachecoValdivia/" target="_blank">Luis Stefano Pacheco Valdivia</a></li>
-            </ul>
-        </section>
+            <p>Mi formación académica actual y colaboraciones</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Cursos Actuales</h3>
+                <ul>
+                    <li><strong>Matemática 1:</strong> Fundamentos matemáticos para análisis empresarial.</li>
+                    <li><strong>Química 1:</strong> Principios químicos aplicados.</li>
+                    <li><strong>Metodología de la Investigación:</strong> Técnicas de investigación.</li>
+                    <li><strong>Economía General:</strong> Principios económicos aplicados.</li>
+                    <li><strong>Introducción a la Filosofía:</strong> Reflexión crítica filosófica.</li>
+                    <li><strong>Ciencia de la Computación:</strong> Fundamentos de programación.</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Colaboradores</h3>
+                <p>Trabajo y comparto experiencias con mis compañeros:</p>
+                <div class="collaborators">
+                    <a href="https://fabriciobernardovillanueva.github.io/githubpagetest/" target="_blank" class="collaborator-link">Fabricio Villanueva</a>
+                    <a href="https://jonathanboristunquipaticuna.github.io/JonathanBorisTunquipaTicu-a/" target="_blank" class="collaborator-link">Jonathan Tunquipa</a>
+                    <a href="https://yadhirayurikhocoyuritirado.github.io/yadhirayurikhocoyuri/" target="_blank" class="collaborator-link">Yadhira Coyuri</a>
+                    <a href="https://emerickcarlosteranbedregal.github.io/EmerickCarlosTeranBedregal/" target="_blank" class="collaborator-link">Emerick Teran</a>
+                    <a href="https://joaquinadrianolopezmolina.github.io/JoaquinAdrianoLopezMolina/" target="_blank" class="collaborator-link">Joaquin Lopez</a>
+                    <a href="https://rodrigorembrantsalasapaza.github.io/RodrigoRembrantSalasApaza/" target="_blank" class="collaborator-link">Rodrigo Salas</a>
+                    <a href="https://luisstefanopachecovaldivia.github.io/LuisStefanoPachecoValdivia/" target="_blank" class="collaborator-link">Luis Pacheco</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contacto">
+    <section id="contacto" class="content-section fade-in">
+        <div class="section-title">
             <h2>Contacto</h2>
-            <p>Mi via Correo:</p>
-            <p>Email: <a href="mailto:karen.quispe.zamata@ucsp.edu.pe">Karen Quispe Zamata</a></p>
-        </section>
-    </main>
+            <p>Ponte en contacto conmigo para colaboraciones o más información</p>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:karen.quispe.zamata@ucsp.edu.pe">karen.quispe.zamata@ucsp.edu.pe</a></p>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Karen Quispe Zamata</p>
+    <footer class="fade-in">
+        <p>&copy; 2025 Karen Quispe Zamata. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
