@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karen Quispe Zamata, estudiante de Administración y Negocios en la UCSP. Información de biografía, estudios, colaboradores y contacto.">
   <title>Karen Quispe Zamata</title>
+  <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -91,6 +93,10 @@
       font-size: 1.3rem;
       margin-top: 1rem;
       color: #d0f4de;
+    }
+
+    main {
+      display: block;
     }
 
     .content-section {
@@ -200,6 +206,12 @@
       text-decoration: none;
     }
 
+    /* Accesibilidad: enfoque visible en enlaces */
+    a:focus {
+      outline: 2px solid var(--secondary-color);
+      outline-offset: 2px;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -229,75 +241,78 @@
   </style>
 </head>
 <body>
-
   <header>
     <div class="logo">San Pablo</div>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
       <a href="#biografia">Biografía</a>
       <a href="#estudios">Estudios</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Karen Quispe Zamata</h1>
-    <p>Estudiante de Administración y Negocios en la UCSP</p>
-  </section>
+  <main>
+    <section class="hero" aria-label="Presentación principal">
+      <h1>Karen Quispe Zamata</h1>
+      <p>Estudiante de Administración y Negocios en la UCSP</p>
+    </section>
 
-  <section id="biografia" class="content-section">
-    <div class="section-title">
-      <h2>Biografía</h2>
-      <p>Un poco sobre mi trayectoria y aspiraciones profesionales</p>
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <p>Soy Karen Quispe Zamata, estudiante de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank" rel="noopener noreferrer">Administración y Negocios</a> en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener noreferrer">Universidad Católica San Pablo</a>.</p>
-        <p>Me gusta aprender, crecer profesionalmente y me apasionan los negocios y la innovación. Mi objetivo es desarrollar habilidades que me permitan contribuir al crecimiento empresarial y al desarrollo económico de mi región.</p>
+    <section id="biografia" class="content-section">
+      <div class="section-title">
+        <h2>Biografía</h2>
+        <p>Un poco sobre mi trayectoria y aspiraciones profesionales</p>
       </div>
-    </div>
-  </section>
-
-  <section id="estudios" class="content-section">
-    <div class="section-title">
-      <h2>Estudios y Cursos</h2>
-      <p>Mi formación académica actual y compañeros</p>
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <h3>Cursos Actuales</h3>
-        <ul>
-          <li><strong>Matemática 1:</strong> Fundamentos para decisiones financieras.</li>
-          <li><strong>Química 1:</strong> Aplicada a procesos industriales.</li>
-          <li><strong>Metodología de la Investigación:</strong> Investigación empresarial.</li>
-          <li><strong>Economía General:</strong> Principios económicos aplicados.</li>
-          <li><strong>Introducción a la Filosofía:</strong> Ética en los negocios.</li>
-          <li><strong>Ciencia de la Computación:</strong> Tecnología aplicada a la administración.</li>
-        </ul>
-      </div>
-      <div class="grid-item">
-        <h3>Colaboradores</h3>
-        <div class="collaborators">
-          <a class="collaborator-link" href="https://fabriciobernardovillanueva.github.io/githubpagetest/" target="_blank" rel="noopener noreferrer">Fabricio Villanueva</a>
-          <a class="collaborator-link" href="https://jonathanboristunquipaticuna.github.io/JonathanBorisTunquipaTicu-a/" target="_blank" rel="noopener noreferrer">Jonathan Tunquipa</a>
-          <a class="collaborator-link" href="https://yadhirayurikhocoyuritirado.github.io/yadhirayurikhocoyuri/" target="_blank" rel="noopener noreferrer">Yadhira Coyuri</a>
+      <div class="grid-container">
+        <div class="grid-item">
+          <p>Soy Karen Quispe Zamata, estudiante de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank" rel="noopener noreferrer">Administración y Negocios</a> en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener noreferrer">Universidad Católica San Pablo</a>. Me considero una persona proactiva y con muchas ganas de aprender.</p>
+          <p>Me gusta aprender, crecer profesionalmente y me apasionan los negocios y la innovación. Mi objetivo es desarrollar habilidades que me permitan contribuir al crecimiento empresarial y al desarrollo de mi entorno.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contacto" class="content-section">
-    <div class="section-title">
-      <h2>Contacto</h2>
-    </div>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:karen.quispe.zamata@ucsp.edu.pe">karen.quispe.zamata@ucsp.edu.pe</a></p>
-    </div>
-  </section>
+    <section id="estudios" class="content-section">
+      <div class="section-title">
+        <h2>Estudios y Cursos</h2>
+        <p>Mi formación académica actual y compañeros</p>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Cursos Actuales</h3>
+          <ul>
+            <li><strong>Matemática 1:</strong> Fundamentos para decisiones financieras.</li>
+            <li><strong>Química 1:</strong> Aplicada a procesos industriales.</li>
+            <li><strong>Metodología de la Investigación:</strong> Investigación empresarial.</li>
+            <li><strong>Economía General:</strong> Principios económicos aplicados.</li>
+            <li><strong>Introducción a la Filosofía:</strong> Ética en los negocios.</li>
+            <li><strong>Ciencia de la Computación:</strong> Tecnología aplicada a la administración.</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h3>Colaboradores</h3>
+          <div class="collaborators">
+            <a class="collaborator-link" href="https://fabriciobernardovillanueva.github.io/githubpagetest/" target="_blank" rel="noopener noreferrer">Fabricio Villanueva</a>
+            <a class="collaborator-link" href="https://jonathanboristunquipaticuna.github.io/JonathanBorisTunquipaTicu-a/" target="_blank" rel="noopener noreferrer">Jonathan Tunquipa</a>
+            <a class="collaborator-link" href="https://yadhirayurikhocoyuritirado.github.io/yadhirayurikhocoyuri/" target="_blank" rel="noopener noreferrer">Yadhira Coyuri</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="content-section">
+      <div class="section-title">
+        <h2>Contacto</h2>
+      </div>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:karen.quispe.zamata@ucsp.edu.pe">karen.quispe.zamata@ucsp.edu.pe</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Karen Quispe Zamata</p>
     <p>Estudiante de Administración y Negocios en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener noreferrer">UCSP</a></p>
   </footer>
+</body>
+</html>
 
 </body>
 </html>
