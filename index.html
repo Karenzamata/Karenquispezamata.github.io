@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Karen Quispe Zamata, estudiante de Administración y Negocios en la UCSP. Información de biografía, estudios, colaboradores y contacto.">
+  <meta name="description" content="Karen Quispe Zamata, estudiante de Administración y Negocios en la UCSP.">
   <title>Karen Quispe Zamata</title>
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
@@ -59,38 +59,22 @@
       color: var(--light-text);
       text-decoration: none;
       font-weight: 500;
-      position: relative;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--accent-color);
-      transition: width 0.3s ease;
-    }
-
-    nav a:hover::after {
-      width: 100%;
     }
 
     .hero {
       background: linear-gradient(to bottom right, #005f73, #0a9396);
       color: var(--light-text);
       text-align: center;
-      padding: 7rem 2rem;
+      padding: 5rem 2rem;
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 400;
     }
 
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-top: 1rem;
       color: #d0f4de;
     }
@@ -100,55 +84,50 @@
     }
 
     .content-section {
-      padding: 4rem 5%;
+      padding: 3rem 5%;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
     .section-title h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: var(--primary-color);
       margin-bottom: 0.5rem;
     }
 
     .section-title p {
       color: var(--secondary-color);
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
     }
 
     .grid-item {
       background: white;
-      padding: 2rem;
-      border-radius: 10px;
+      padding: 1.5rem;
+      border-radius: 8px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .grid-item:hover {
-      transform: translateY(-6px);
     }
 
     .grid-item h3 {
       color: var(--primary-color);
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
 
     .grid-item p, .grid-item li {
       color: #444;
-      font-size: 1rem;
+      font-size: 0.95rem;
       margin-bottom: 0.8rem;
     }
 
@@ -156,60 +135,38 @@
       padding-left: 1.2rem;
     }
 
-    .grid-item li::marker {
-      color: var(--secondary-color);
-    }
-
     .collaborators {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
+      flex-direction: column;
+      gap: 0.5rem;
     }
 
     .collaborator-link {
-      background-color: var(--accent-color);
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
+      color: var(--primary-color);
       text-decoration: none;
-      color: var(--text-color);
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-
-    .collaborator-link:hover {
-      background-color: var(--secondary-color);
-      color: white;
     }
 
     .contact-info {
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
 
     .contact-info a {
       color: var(--primary-color);
       text-decoration: none;
-      border-bottom: 2px solid var(--accent-color);
-      font-weight: 500;
     }
 
     footer {
       background-color: var(--primary-color);
       color: var(--light-text);
       text-align: center;
-      padding: 3rem 1rem;
-      margin-top: 4rem;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
     }
 
     footer a {
       color: var(--accent-color);
       text-decoration: none;
-    }
-
-    /* Accesibilidad: enfoque visible en enlaces */
-    a:focus {
-      outline: 2px solid var(--secondary-color);
-      outline-offset: 2px;
     }
 
     @media (max-width: 768px) {
@@ -225,17 +182,17 @@
       }
 
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
     }
 
     @media (max-width: 480px) {
       .hero {
-        padding: 4rem 1.5rem;
+        padding: 3rem 1.5rem;
       }
 
       .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
     }
   </style>
@@ -263,8 +220,8 @@
       </div>
       <div class="grid-container">
         <div class="grid-item">
-          <p>Soy Karen Quispe Zamata, estudiante de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank" rel="noopener noreferrer">Administración y Negocios</a> en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener noreferrer">Universidad Católica San Pablo</a>. Me considero una persona proactiva y con muchas ganas de aprender.</p>
-          <p>Me gusta aprender, crecer profesionalmente y me apasionan los negocios y la innovación. Mi objetivo es desarrollar habilidades que me permitan contribuir al crecimiento empresarial y al desarrollo de mi entorno.</p>
+          <p>Soy Karen Quispe Zamata, estudiante de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank" rel="noopener noreferrer">Administración y Negocios</a> en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener noreferrer">Universidad Católica San Pablo</a>.</p>
+          <p>Me considero una persona proactiva y con muchas ganas de aprender. Mi objetivo es desarrollar habilidades que me permitan contribuir al crecimiento empresarial.</p>
         </div>
       </div>
     </section>
@@ -278,20 +235,20 @@
         <div class="grid-item">
           <h3>Cursos Actuales</h3>
           <ul>
-            <li><strong>Matemática 1:</strong> Fundamentos para decisiones financieras.</li>
-            <li><strong>Química 1:</strong> Aplicada a procesos industriales.</li>
-            <li><strong>Metodología de la Investigación:</strong> Investigación empresarial.</li>
-            <li><strong>Economía General:</strong> Principios económicos aplicados.</li>
-            <li><strong>Introducción a la Filosofía:</strong> Ética en los negocios.</li>
-            <li><strong>Ciencia de la Computación:</strong> Tecnología aplicada a la administración.</li>
+            <li>Matemática 1: Fundamentos para decisiones financieras</li>
+            <li>Química 1: Aplicada a procesos industriales</li>
+            <li>Metodología de la Investigación</li>
+            <li>Economía General</li>
+            <li>Introducción a la Filosofía</li>
+            <li>Ciencia de la Computación</li>
           </ul>
         </div>
         <div class="grid-item">
           <h3>Colaboradores</h3>
           <div class="collaborators">
-            <a class="collaborator-link" href="https://fabriciobernardovillanueva.github.io/githubpagetest/" target="_blank" rel="noopener noreferrer">Fabricio Villanueva</a>
-            <a class="collaborator-link" href="https://jonathanboristunquipaticuna.github.io/JonathanBorisTunquipaTicu-a/" target="_blank" rel="noopener noreferrer">Jonathan Tunquipa</a>
-            <a class="collaborator-link" href="https://yadhirayurikhocoyuritirado.github.io/yadhirayurikhocoyuri/" target="_blank" rel="noopener noreferrer">Yadhira Coyuri</a>
+            <a class="collaborator-link" href="https://fabriciobernardovillanueva.github.io/githubpagetest/" target="_blank">Fabricio Villanueva</a>
+            <a class="collaborator-link" href="https://jonathanboristunquipaticuna.github.io/JonathanBorisTunquipaTicu-a/" target="_blank">Jonathan Tunquipa</a>
+            <a class="collaborator-link" href="https://yadhirayurikhocoyuritirado.github.io/yadhirayurikhocoyuri/" target="_blank">Yadhira Coyuri</a>
           </div>
         </div>
       </div>
@@ -309,11 +266,10 @@
 
   <footer>
     <p>&copy; 2025 Karen Quispe Zamata</p>
-    <p>Estudiante de Administración y Negocios en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener noreferrer">UCSP</a></p>
+    <p>Estudiante de Administración y Negocios en la <a href="https://ucsp.edu.pe/" target="_blank">UCSP</a></p>
   </footer>
 </body>
 </html>
-
 </body>
 </html>
 
